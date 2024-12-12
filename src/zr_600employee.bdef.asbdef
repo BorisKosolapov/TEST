@@ -1,0 +1,36 @@
+managed implementation in class ZBP_R_600EMPLOYEE unique;
+strict ( 2 );
+define behavior for ZR_600EMPLOYEE alias Zr600employee
+persistent table Z600EMPLOYEE
+lock master
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   Employee;
+
+  field ( readonly : update )
+   Employee;
+
+
+  create;
+  update;
+  delete;
+
+  mapping for Z600EMPLOYEE
+  {
+    Employee = employee;
+    FirstName = first_name;
+    LastName = last_name;
+    BirthDate = birth_date;
+    EntryDate = entry_date;
+    AnnualSalary = annual_salary;
+    CurrencyCode = currency_code;
+    DepartmentId = department_id;
+    Manager = manager;
+    Createdby = createdby;
+    Createdat = createdat;
+    Lastchangedby = lastchangedby;
+    Lastchangedat = lastchangedat;
+  }
+}

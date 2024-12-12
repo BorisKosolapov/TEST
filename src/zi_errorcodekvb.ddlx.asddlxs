@@ -1,0 +1,29 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'ErrorCodeKvb', 
+    typeNamePlural: 'ErrorCodeKvbs', 
+    title: {
+      type: #STANDARD, 
+      label: 'Error Code KVB', 
+      value: 'ErrorCode'
+    }
+  }
+}
+annotate view ZI_ErrorCodeKvb with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_ErrorCodeKvb', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Error Code KVB', 
+    position: 1 
+  } ]
+  ErrorCode;
+}

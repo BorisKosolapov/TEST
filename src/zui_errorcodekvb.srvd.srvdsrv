@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_ErrorCodeKvb_S'
+define service ZUI_ERRORCODEKVB {
+  expose ZI_ERRORCODEKVB_S as ErrorCodeKvbAll;
+  expose ZI_ERRORCODEKVB as ErrorCodeKvb;
+}
